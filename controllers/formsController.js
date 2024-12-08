@@ -28,12 +28,12 @@ const submitForm = async (req, res) => {
 
   // Set up nodemailer
   const transporter = nodemailer.createTransport({
-    host: 'r1.dnspark.in', // Outgoing server
-    port: 465, // SMTP SSL port
-    secure: true, // Use SSL for secure connection
+    host: 'smtp.gmail.com',  // Correct SMTP host for Gmail
+    port: 587,               // Port for TLS (secure connection)
+    secure: false,           // Use TLS (encryption)
     auth: {
-      user: 'no-reply@xtocast.com', // Your email address
-      pass: 'Collinsjoe@2004', // Email account’s password
+      user: 'filibiinfanax10@gmail.com', // Your Gmail address
+      pass: 'ftde hndr uism bzwd',       // Your Gmail password (Consider using OAuth2 for better security)
     },
   });
   
