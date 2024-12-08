@@ -15,7 +15,7 @@ const app = express();
 // Add this before defining your routes
 app.use(
     cors({
-      origin: 'https://events.xtocast.com/', // Allow requests from this origin
+      origin: 'https://events.xtocast.com', // Allow requests from this origin
       methods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS'], // Allowed methods
       allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
       credentials: true, // Allow cookies and credentials
